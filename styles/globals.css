@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+html,
+body {
+  @apply bg-blush-50 text-slate-800;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-soft;
+  }
+  .btn-primary {
+    @apply rounded-2xl bg-pink-500 text-white px-5 py-3 shadow-soft active:opacity-90 disabled:opacity-60;
+  }
+}
+.font-script {
+  font-family: "Great Vibes", ui-serif, Georgia, serif;
+}
