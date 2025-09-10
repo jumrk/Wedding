@@ -1,7 +1,9 @@
 import "./../styles/globals.css";
 
 export const metadata = {
-  metadataBase: new URL(process.env.url || "localhost:3000"),
+  metadataBase: new URL(
+    process.env.url || "https://wedding-66woo1qlg-jumrks-projects.vercel.app"
+  ),
   title: {
     default: "Thiệp cưới Kha & Hạ",
     template: "%s | Thiệp cưới",
@@ -9,7 +11,8 @@ export const metadata = {
   description: "Trân trọng kính mời bạn đến chung vui cùng gia đình chúng tôi.",
   openGraph: {
     type: "website",
-    url: process.env.url,
+    url:
+      process.env.url || "https://wedding-66woo1qlg-jumrks-projects.vercel.app",
     siteName: "Thiệp cưới",
     title: "Thiệp mời cưới Kha & Hạ",
     description: "Trân trọng kính mời...",
