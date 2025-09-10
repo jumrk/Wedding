@@ -49,7 +49,7 @@ export default function Schedule() {
           className="relative aspect-[3/4] overflow-hidden rounded-xl bg-slate-100"
           transition={{ type: "spring", stiffness: 180, damping: 18 }}
         >
-          <img src="/images/1.jpg" alt="Album 1" className="object-cover" />
+          <img src="/images/1.JPG" alt="Album 1" className="object-cover" />
         </motion.div>
 
         <motion.div
@@ -59,7 +59,7 @@ export default function Schedule() {
           className="relative aspect-[3/4] overflow-hidden rounded-xl bg-slate-100 shadow-soft z-10"
           transition={{ type: "spring", stiffness: 180, damping: 18 }}
         >
-          <img src="/images/2.jpg" alt="Album 2" className="object-cover" />
+          <img src="/images/2.JPG" alt="Album 2" className="object-cover" />
         </motion.div>
 
         <motion.div
@@ -67,7 +67,7 @@ export default function Schedule() {
           className="relative aspect-[3/4] overflow-hidden rounded-xl bg-slate-100"
           transition={{ type: "spring", stiffness: 180, damping: 18 }}
         >
-          <img src="/images/3.jpg" alt="Album 3" className="object-cover" />
+          <img src="/images/3.JPG" alt="Album 3" className="object-cover" />
         </motion.div>
       </motion.div>
       <motion.div

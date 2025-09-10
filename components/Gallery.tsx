@@ -5,7 +5,7 @@ import { motion, useReducedMotion } from "framer-motion";
 const IMG_COUNT = 30;
 const IMAGES = Array.from(
   { length: IMG_COUNT },
-  (_, i) => `/images/${i + 1}.jpg`
+  (_, i) => `/images/${i + 1}.JPG`
 );
 
 export default function Gallery() {
@@ -30,7 +30,7 @@ export default function Gallery() {
                 className="block w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                 onError={(e) => {
                   e.currentTarget.onerror = null;
-                  e.currentTarget.src = "/images/placeholder.jpg";
+                  e.currentTarget.src = "/images/placeholder.JPG";
                 }}
               />
             </MasonryItem>

@@ -162,7 +162,7 @@ export default function Couple() {
           className="relative aspect-[3/4] overflow-hidden rounded-2xl will-change-transform"
         >
           <img
-            src="/images/8.jpg"
+            src="/images/8.JPG"
             alt="Chú rể"
             className="object-cover [backface-visibility:hidden]"
           />
@@ -184,7 +184,7 @@ export default function Couple() {
           className="relative aspect-[3/4] overflow-hidden rounded-2xl will-change-transform"
         >
           <img
-            src="/images/9.jpg"
+            src="/images/9.JPG"
             alt="Cô dâu"
             className="object-cover [backface-visibility:hidden]"
           />
