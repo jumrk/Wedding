@@ -170,7 +170,7 @@ function Lightbox({
 
         <button
           onClick={prev}
-          className="absolute left-0 top-0 h-full w-1/3 text-white/0 active:text-white/80"
+          className="absolute left-0 top-12 h-full w-1/3 text-white/0 active:text-white/80"
           aria-label="Trước"
         >
           <span className="absolute left-2 top-1/2 -translate-y-1/2 text-2xl">
@@ -179,7 +179,7 @@ function Lightbox({
         </button>
         <button
           onClick={next}
-          className="absolute right-0 top-0 h-full w-1/3 text-white/0 active:text-white/80"
+          className="absolute right-0 top-12 h-full w-1/3 text-white/0 active:text-white/80"
           aria-label="Sau"
         >
           <span className="absolute right-2 top-1/2 -translate-y-1/2 text-2xl">
