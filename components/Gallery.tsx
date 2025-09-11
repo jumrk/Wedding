@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
-const IMG_COUNT = 30;
+const IMG_COUNT = 5;
 const IMAGES = Array.from(
   { length: IMG_COUNT },
   (_, i) => `/images/${i + 1}.JPG`
@@ -49,7 +49,6 @@ export default function Gallery() {
   );
 }
 
-/* === Item có hiệu ứng scroll-reveal === */
 function MasonryItem({
   children,
   index,
@@ -61,7 +60,6 @@ function MasonryItem({
 }) {
   const prefersReduced = useReducedMotion();
 
-  // delay nhỏ để cảm giác “rải” mượt, không chậm
   const delay = Math.min(0.18, index * 0.015);
 
   return (
@@ -89,7 +87,6 @@ function MasonryItem({
   );
 }
 
-/* === Lightbox mobile-size === */
 function Lightbox({
   images,
   startIndex,

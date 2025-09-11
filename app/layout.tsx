@@ -1,9 +1,17 @@
 import "./../styles/globals.css";
 
+function getBaseUrl() {
+  const raw =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    process.env.VERCEL_URL ||
+    "http://localhost:3000";
+  return raw.startsWith("http") ? raw : `https://${raw}`;
+}
+
+const baseUrl = getBaseUrl();
+
 export const metadata = {
-  metadataBase: new URL(
-    process.env.url || "https://wedding-66woo1qlg-jumrks-projects.vercel.app"
-  ),
+  metadataBase: new URL(baseUrl),
   title: {
     default: "Thiệp cưới Kha & Hạ",
     template: "%s | Thiệp cưới",
@@ -11,14 +19,13 @@ export const metadata = {
   description: "Trân trọng kính mời bạn đến chung vui cùng gia đình chúng tôi.",
   openGraph: {
     type: "website",
-    url:
-      process.env.url || "https://wedding-66woo1qlg-jumrks-projects.vercel.app",
+    url: "/",
     siteName: "Thiệp cưới",
     title: "Thiệp mời cưới Kha & Hạ",
     description: "Trân trọng kính mời...",
     images: [
       {
-        url: "/images/5.JPG",
+        url: "/images/og.JPG",
         width: 1200,
         height: 630,
         alt: "Thiệp cưới Kha & Hạ",
@@ -30,7 +37,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Thiệp cưới Kha & Hạ",
     description: "Trân trọng kính mời...",
-    images: ["/images/5.JPG"],
+    images: ["/images/og.JPG"],
   },
 };
 

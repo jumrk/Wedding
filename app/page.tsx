@@ -8,6 +8,7 @@ import Map from "@/components/Map";
 import MusicPlayer from "@/components/MusicPlayer";
 import dynamic from "next/dynamic";
 import InviteSplash from "@/components/InviteSplash";
+import GiftQR from "@/components/GiftQR";
 
 export default function Page() {
   const Countdown = dynamic(() => import("@/components/Countdown"), {
@@ -33,6 +34,13 @@ export default function Page() {
         <Map />
       </div>
       <Gallery />
+      <GiftQR
+        src="/qr.jpg"
+        bankName="TECHCOMBANK"
+        accountName="HUYNH TRAN VAN HA"
+        accountNumber="19036754935011"
+        note="Chúc Kha & Hạ hạnh phúc 💕"
+      />
       <div id="rsvp">
         <RSVPForm />
       </div>
