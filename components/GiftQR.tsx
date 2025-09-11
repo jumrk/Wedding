@@ -61,10 +61,10 @@ export default function GiftQR({
               <img
                 src={src}
                 alt="Mã QR chúc phúc"
-                width={280}
-                height={280}
+                width={220}
+                height={220}
                 loading="lazy"
-                className="block w-[260px] sm:w-[280px] h-auto"
+                className="block w-[240px] sm:w-[220px] h-auto"
                 onError={(e) => {
                   e.currentTarget.onerror = null;
                   e.currentTarget.src = "/images/placeholder.jpg";
